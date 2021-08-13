@@ -28,9 +28,9 @@ jobs:
       - name: Image Resizer Action
         uses: sharadcodes/img-resizer@v1.1
         with:
-          image-folder: '/home/runner/work/GitHubActionTesting/GitHubActionTesting/testingga.PNG' # This is a Required field & this folder has original images
+          image-folder: '${{ github.workspace }}/GitHubActionTesting/GitHubActionTesting' # This is a Required field & this folder has original images
           new-resolution: '100x50' # This is Required field
-          output-folder: "/home/runner/work/GitHubActionTesting/GitHubActionTesting" # This is Required field & this folder will be used to store resized images
+          output-folder: "${{ github.workspace }}/GitHubActionTesting/GitHubActionTesting" # This is Required field & this folder will be used to store resized images
 
 
       # Runs a single command using the runners shell

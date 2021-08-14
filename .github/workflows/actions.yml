@@ -51,3 +51,17 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  your_job_name:
+    name: Trigger Jenkins Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger your-awesome-job-name job
+        uses: toptal/jenkins-job-trigger-action@master
+        with:
+          jenkins_url: "http://3.144.81.128:8080/"
+          jenkins_user: "yallag"
+          jenkins_token: "119a97f987e8a8bf508eb524b29aa9a58b"
+          job_name: "job/jenkins_poc"
+          job_params: '{"param_1":"value_1", "param_2":"value_2"}'
+          job_timeout: "3600" # Default 30 sec. (optional)

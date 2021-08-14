@@ -63,5 +63,5 @@ jobs:
           jenkins_user: "yallag"
           jenkins_token: "119a97f987e8a8bf508eb524b29aa9a58b"
           job_name: "jenkins_poc"
-          job_params: '{"param_1":"value_1", "param_2":"value_2"}'
+          job_params: '{"token":"12345"}'
           job_timeout: "3600" # Default 30 sec. (optional)

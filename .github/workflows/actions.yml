@@ -60,8 +60,8 @@ jobs:
         uses: toptal/jenkins-job-trigger-action@master
         with:
           jenkins_url: "http://3.144.81.128:8080/"
-          jenkins_user: "yallag"
-          jenkins_token: "119a97f987e8a8bf508eb524b29aa9a58b"
+          jenkins_user: "machau"
+          jenkins_token: "machau1234"
           job_name: "jenkins_poc"
           job_params: '{"token":"12345"}'
           job_timeout: "3600" # Default 30 sec. (optional)

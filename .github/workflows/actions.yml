@@ -65,3 +65,4 @@ jobs:
           job_name: "jenkins_poc"
           job_params: '{"token":"12345", "Name":"hello" }'
           job_timeout: "60" # Default 30 sec. (optional)
+          async: 'true'

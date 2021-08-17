@@ -61,7 +61,7 @@ jobs:
         with:
           jenkins_url: "http://18.225.6.124:8080/"
           jenkins_user: "yallag"
-          jenkins_token: ${{ secrets.YALLAG_SECRET }}
+          jenkins_token: "119a97f987e8a8bf508eb524b29aa9a58b"
           job_name: "jenkins_poc"
           job_params: '{"token":"12345", "Name":"hello" }'
           job_timeout: "60" # Default 30 sec. (optional)

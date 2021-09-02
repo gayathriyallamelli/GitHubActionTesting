@@ -54,7 +54,7 @@ jobs:
 
   your_job_name:
     name: Trigger Jenkins Job
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Trigger your-awesome-job-name job
         uses: toptal/jenkins-job-trigger-action@master
